@@ -21,6 +21,8 @@ klhtm.string.data["ruRU"] =
 		["revenge"] = "Реванш",
 		["shieldbash"] = "Удар щитом",
 		["sunder"] = "Раскол брони",
+		["thunderclap"] = "Удар грома",
+		["demoralizingshout"] = "Деморализующий крик",
 		["feint"] = "Ложный выпад",
 		["cower"] = "Попятиться",
 		["taunt"] = "Провокация",
@@ -36,16 +38,17 @@ klhtm.string.data["ruRU"] =
 		backstab = "Удар в спину",
 		sinisterstrike = "Коварный удар",
 		eviscerate = "Потрошение",
-		corruption = "Corruption",
-		curseofagony = "Curse of Agony",
-		siphonlife = "Siphon Life",
-		immolate = "Immolate",
+
+		corruption = "Порча",
+		curseofagony = "Проклятие агонии",
+		siphonlife = "Вытягивание жизни",
+		immolate = "Жертвенный огонь",
 		
 		-- Items / Buffs:
 		["arcaneshroud"] = "Чародейский покров",
 		["reducethreat"] = "Снижение угрозы",
-		["theeyeofdiminution"] = "The Eye of Diminution",
-		["notthere"] = "Not There",
+		["theeyeofdiminution"] = "Око Убывания",
+		["notthere"] = "Не там",
 
 		-- Leeches: no threat from heal
 		["holynova"] = "Кольцо света", -- no heal or damage threat
@@ -54,8 +57,8 @@ klhtm.string.data["ruRU"] =
 		["deathcoil"] = "Лик смерти",	
 		
 		-- Fel Stamina and Fel Energy DO cause threat! GRRRRRRR!!!
-		--["felstamina"] = "Fel Stamina",
-		--["felenergy"] = "Fel Energy",
+		--["felstamina"] = "Выносливость скверны",
+		--["felenergy"] = "Энергия Скверны",
 		
 		["bloodsiphon"] = "Кровавый насос", -- poisoned blood vs Hakkar
 		
@@ -86,11 +89,10 @@ klhtm.string.data["ruRU"] =
 		-- priest shadow. No longer used (R17).
 		["mindblast"] = "Взрыв разума",	-- 2 threat per damage
 		--[[
-		["mindflay"] = "Mind Flay",
-		["devouringplague"] = "Devouring Plague",
-		["shadowwordpain"] = "Shadow Word: Pain",
-		,
-		["manaburn"] = "Mana Burn",
+		["mindflay"] = "Пытка разума",
+		["devouringplague"] = "Всепожирающая чума",
+		["shadowwordpain"] = "Слово Тьмы: Боль",
+		["manaburn"] = "Сожжение маны",
 		]]
 	},
 	["power"] = 
@@ -119,8 +121,8 @@ klhtm.string.data["ruRU"] =
 		["burningsoul"] = "Пылающая душа",
 		["healinggrace"] = "Исцеляющая благодать",
 		["shadowaffinity"] = "Единение с Тьмой",
-		["druidsubtlety"] = "Druid Subtlety",
-		["feralinstinct"] = "Feral Instinct",
+		["druidsubtlety"] = "Скрытность друидов",
+		["feralinstinct"] = "Животный инстинкт",
 		["ferocity"] = "Свирепость",
 		["savagefury"] = "Бешеное неистовство",
 		["tranquility"] = "Улучшенное спокойствие",
@@ -137,22 +139,22 @@ klhtm.string.data["ruRU"] =
 		["defensivestance"] = "Оборонительная стойка",
 		["berserkerstance"] = "Стойка берсерка",
 		["defiance"] = "Неукротимость",
-		["basevalue"] = "Base Value",
+		["basevalue"] = "Базовое значение",
 		["bearform"] = "Облик медведя",
 		["catform"] = "Облик кошки",
-		["glovethreatenchant"] = "+Threat Enchant to Gloves",
-		["backthreatenchant"] = "-Threat Enchant to Back",
+		["glovethreatenchant"] = "+Угроза Чары для перчаток",
+		["backthreatenchant"] = "-Угроза Чары для плаща",
 	},
 	
 	["sets"] = 
 	{
 		["bloodfang"] = "Кровавых Клыков",
-		["nemesis"] = "Возмездия",
-		["plagueheart"] = "Plagueheart",
-		["bonescythe"] = "Bonescythe",
+		["nemesis"] = "возмездия",
+		["plagueheart"] = "Проклятого Сердца",
+		["bonescythe"] = "костяной косы",
 		["netherwind"] = "ветра Пустоты",
-		["might"] = "Мощи",
-		["arcanist"] = "Чародея",
+		["might"] = "мощи",
+		["arcanist"] = "чародея",
 	},
 	["boss"] = 
 	{
@@ -165,14 +167,17 @@ klhtm.string.data["ruRU"] =
 			["thekalphase2"] = "наполни меня своим ГНЕВОМ",
 			["rajaxxfinal"] = "Настырная тварь! Я сам тебя убью!",
 			["azuregosport"] = "Сюда, малыши",
+			["nefphase1"] = "Браво, слуги мои! Смертные утрачивают мужество!", --vmangos+old
 			["nefphase2"] = "Горите, мерзавцы, ГОРИТЕ!",
-			["thad1"] = "EAT YOUR BONES",
+			["razargor1"] = "Я свободен! Эта адская машина больше не будет меня мучить!", --vmangos
+			["broodlord1"] = "Таких, как вы, здесь быть не должно! Смерть грозит лишь вам!", --vmangos
+			["thad1"] = "Я сожру ваши кости!",
 			["thad2"] = "BREAK YOU!",
-			["thad3"] = "KILL!",
-			["noth1"] = "Die, trespasser!",
-			["noth2"] = "Glory to the master!",
-			["noth3"] = "Your life is forfeit!",
-			["ktphase2"] = "Pray for mercy!",
+			["thad3"] = "Убивать!",
+			["noth1"] = "Умри, преступник!",
+			["noth2"] = "Слава господину!",
+			["noth3"] = "Жизнь – плата за твои проступки.",
+			["ktphase2"] = "Моли о пощаде!",
 		},
 		-- Some of these are unused. Also, if none is defined in your localisation, they won't be used,
 		-- so don't worry if you don't implement it.
@@ -207,11 +212,14 @@ klhtm.string.data["ruRU"] =
 			mark2 = "Знак Кортазза",
 			mark3 = "Знак Могрейна",
 			mark4 = "Знак Зелиека",
+			
+			-- Onyxia fireball (presumably same as mage)
+			fireball = "Огненный шар",
 		}
 	},
 	["misc"] = 
 	{
-		["imp"] = "Imp", -- UnitCreatureFamily("pet")
+		["imp"] = "Бес", -- UnitCreatureFamily("pet") -- CreatureFamily.dbc
 		["spellrank"] = "Уровень (%d+)", -- second value of GetSpellName(x, "spell")
 		["aggrogain"] = "Срыв Аггро",
 	},
@@ -224,7 +232,7 @@ klhtm.string.data["ruRU"] =
 				["name"] = "Имя",
 				["threat"] = "Угроза",
 				["pc"] = "%Макс",			-- your threat as a percentage of the #1 player's threat
-				["sunder"] = "Su",			-- your threat as a percentage of the #1 player's threat
+				["sunder"] = "РБ",			-- your threat as a percentage of the #1 player's threat
 			},
 			["stringshort"] = {
 				-- tooltip titles for the bottom bar strings
@@ -289,7 +297,7 @@ klhtm.string.data["ruRU"] =
 				["tdef"] = "Разница угрозы",
 				["rank"] = "Уровень угрозы",
 				["pc"] = "% Угрозы",
-				["sunder"] = "Sunders",
+				["sunder"] = "Раскол брони",
 			},
 			["stringlong"] = {
 				-- the tooltip descriptions for titlebar strings
@@ -332,7 +340,7 @@ klhtm.string.data["ruRU"] =
 				["dam"] = "Урон",
 				["threat"] = "Угроза",
 				["pc"] = "% угрозы",
-				["sunder"] = "Sunders",
+				["sunder"] = "Раскол брони",
 			},
 			["options"] = {
 				-- miscelaneous option names
@@ -350,7 +358,7 @@ klhtm.string.data["ruRU"] =
 				["threat"] = "Мин. угрозы", -- dodge...
 				["rank"] = "Ранг угрозы",
 				["pc"] = "% угрозы",
-				["sunder"] = "Sunders",
+				["sunder"] = "Раскол брони",
 				["tdef"] = "Разница угрозы",
 			},
 			["headers"] = {
