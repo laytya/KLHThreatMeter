@@ -171,7 +171,14 @@ me.getenglishspell = function(spellname)
 		elseif spellname == "고통" then return "Suffering"
 		elseif spellname == "포효" then return "Growl"
 		elseif spellname == "위협" then return "Intimidation"
-				-- additional translations could be added
+		end
+	end
+	if GetLocale() == "ruRU" then
+		if spellname == "Мучение" then return "Torment"
+		elseif spellname == "Муки" then return "Suffering"
+		elseif spellname == "Рык" then return "Growl"
+		elseif spellname == "Устрашение" then return "Intimidation"
+			-- additional translations could be added
 		end
 	end
 	return spellname
