@@ -35,16 +35,20 @@ onupdate() function, called from Core.lua
 ]]
 me.onupdate = function()
 	-- update combat state
-	if UnitAffectingCombat("pet") then
-    if petincombat == false then
-    	petincombat = true
-		end 
+	if HasPetUI() then
+		if UnitAffectingCombat("pet") then
+		if petincombat == false then
+			petincombat = true
+			end 
+		else
+		if petincombat == true then
+			petincombat = false
+			mod.table.raiddata[UnitName("pet")] = nil
+			KLHTM_RequestRedraw("raid")
+			end 
+		end
 	else
-    if petincombat == true then
-    	petincombat = false
-    	mod.table.raiddata[UnitName("pet")] = nil
-    	KLHTM_RequestRedraw("raid")
-		end 
+		petincombat = false
 	end
 end
 
